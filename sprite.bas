@@ -1,4 +1,4 @@
-    1  REM Sprites demo. Usually hangs NetworkTerminal. Reboot needed.
+    1  REM Sprites demo
     2  PRINT "This program requires Graphics Controller"
   100  REM WIDTH 255
   105  FREQ=440
@@ -37,6 +37,7 @@
   450  PRINT FNCURSORON$(0);
   460  END
  1000  REM Generate a sound (_S), sine waveform (0),
+ 1005  RETURN
  1010  REM frequency FREQ, duration 80ms, volume 100
  1020  PRINT CHR$(27)+"_S0;"+STR$(FREQ)+";80;100$";
  1030  REM delay 100ms
